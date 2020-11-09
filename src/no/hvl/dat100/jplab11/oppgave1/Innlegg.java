@@ -76,16 +76,16 @@ public abstract class Innlegg {
 	@Override
 	public String toString() {
 		
-		String abc = id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" ; 
+		return id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" ; 
 		
-		return abc;
+		 
 				
 	}
 	
-	// Metoden nedenfor er kun for valgfri oppgave 6
+	
 	public String toHTML() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return "<h2>"+bruker+"@"+dato+"["+likes+"]"+"</h2>";
 				
 	}
 }
